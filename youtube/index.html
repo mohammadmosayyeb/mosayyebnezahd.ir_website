@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه یوتیوب من</title>
+    <style>
+        @font-face {
+            font-family: 'IRAN sans';
+            src: url('iransans.woff2') format('woff2');
+        }
+
+        body {
+            background: #cccccc;
+        }
+
+        * {
+            margin: 0;
+            font-family: iran sans;
+        }
+
+        a {
+            list-style: none;
+            text-decoration: none;
+            color: black;
+        }
+
+        .link {
+            width: 130px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            margin: 0 auto;
+            margin-top: 10vh;
+            margin-bottom: 10vh;
+            font-size: .7em;
+            background: #dfdfdf;
+            border-radius: 25px;
+            box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, .01);
+
+        }
+
+        .con {
+            width: 80vw;
+            height: 20vh;
+            color: black;
+            text-align: center;
+            line-height: 20vh;
+            margin: 0 auto;
+            margin-top: 20vh;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 80px;
+            box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, .01);
+        }
+
+        .top {
+            width: 100px;
+            height: 62px;
+            background: red;
+
+        }
+
+        .mos {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media only screen and (max-width:768px) {
+            .con {
+                font-size: .8em;
+                height: 15vh;
+                margin-top: 25vh;
+                line-height: 15vh;
+            }
+        }
+
+        .rep {
+            width: 80%;
+            height: 7vh;
+            line-height: 7vh;
+            opacity: .3;
+            background: rgba(255, 255, 255, 0.2);
+            margin: 0 auto;
+            margin-top: 3vh;
+            text-align: center;
+            border-radius: 25px;
+            color: rgba(0, 0, 0, 0.8);
+            box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, .01);
+        }
+    </style>
+</head>
+
+<body>
+    <h3 class="con">فیلتر شکن خود را فعال و روی لینک زیر بزنید</h3>
+    <div class="link">
+        <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCAMbZzxTwP6E62DMcUCzlmA%2F&e=ATN25P6Iq2Re0cMLMswBm5vHCXEUYc8VjSt8omdISwgQ70zPh6dI0bkx-fzOyRw5Y4D7IfH9uvpwzIZ2Q3wnTsY&s=1">
+            <h2>mohammad</h2>
+        </a>
+    </div>
+    <div class="rep"></div>
+    <div class="rep"></div>
+    <div class="rep"></div>
+</body>
+<script>
+    var mos = document.querySelectorAll(".rep");
+    mos[0].innerHTML = `${navigator.platform} سیستم عامل شما`;
+    mos[1].innerHTML = `ساعت ${new Date().getHours()}`;
+    mos[2].innerHTML = `تعداد هسته پردازنده شما ${navigator.hardwareConcurrency}`;
+    console.log(navigator.platform);
+    console.log(navigator.vendor);
+    console.log(navigator.hardwareConcurrency);
+</script>
+
+</html>

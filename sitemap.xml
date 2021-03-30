@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://mosayyebnezhad.ir/</loc>
+  <lastmod>2020-10-08T07:32:47+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://mosayyebnezhad.ir/index.html</loc>
+  <lastmod>2020-10-08T07:32:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mosayyebnezhad.ir/cv/shad/</loc>
+  <lastmod>2020-10-07T07:34:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mosayyebnezhad.ir/cv/time/</loc>
+  <lastmod>2020-10-07T07:34:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mosayyebnezhad.ir/codes/calculate.html</loc>
+  <lastmod>2020-10-08T07:24:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>

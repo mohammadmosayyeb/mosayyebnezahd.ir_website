@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+body {
+    background: #dddddd;
+}
+header {
+    width: 100%;
+    height: 48px;
+    margin-bottom: 52px;
+    box-shadow: 0px 2px 15px 15px rgba($color: #000000, $alpha: .1);
+    background: black;
+    h3 {
+        color: white;
+        font-size: 3em;
+        line-height: 45px;
+        text-align: center;
+        transition: .2s;
+        opacity: .8;
+        &:hover{
+            opacity: 1;
+        }
+
+        
+    }
+    h5{
+        color: white;
+        font-size: .8em;
+        line-height: 45px;
+        text-align: center;
+        opacity: .5;
+        transition: .2s;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+.tarikh{
+    width: 120px;
+    height: 48px;
+    text-align: left;
+    float: left;
+    position: relative;
+    margin-top: -45px;
+}
+.monie{
+    width: 120px;
+    height: 48px;
+    float: right;
+    margin-top: -45px;
+}
+.zirin{
+    width: 240px;
+    height: 13px;
+    background: rgba(255, 0, 0, 0.3);
+    color: white;
+    position: relative;
+    text-align: center;
+    font-size: .8em;
+    float: left;
+    margin-left: calc(50vw - 369px);
+    margin-top: -30px;
+    line-height: 13px;
+    opacity: 0;   
+    transition: .7s;
+}
+
+a{text-decoration: none;}
+@mixin flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.line {
+    width: 20%;
+    height: 20vw;
+    // background: lightgray;
+    @include flex;
+    float: left;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    @media (max-width: 1200px) {
+        width: 25%;
+        height: 25vw;
+    }
+    @media (max-width: 992px) {
+        width: 33.333333333333333333333333333%;
+        height: 33.333333333333333333333333333vw;
+    }
+    @media (max-width: 768px) {
+        width: 100%;
+        height: 100vw;
+    }
+}
+.drive {
+    width: 120px;
+    height: 120px;
+    background: white;
+    box-shadow: 0px 0px 13px 13px rgba($color: #000000, $alpha: 0.05);
+    border-radius: 13px;
+    z-index: +5;
+    margin: 30px 60px 30px 0px;
+    @include flex;
+
+    &:hover img {
+        width: 90%;
+    }
+}
+.image {
+    width: 70%;
+    transition: 0.1s;
+}
+
+.monot {
+    position: absolute;
+    opacity: 0.7;
+    transition: 0.3s;
+    z-index: +3;
+    margin: 0px 0 0 0;
+    background: rgba(128, 128, 128, 0.6);
+    text-align: center;
+    padding: 0px 30px;
+    border-radius: 13px;
+}
+@media screen and (min-width: 576px) {
+    .line:hover .monot {
+        margin: 150px 0 0 0;
+    }
+}
+.fott {
+    z-index: +5;
+    position: relative;
+    width: 120px;
+}

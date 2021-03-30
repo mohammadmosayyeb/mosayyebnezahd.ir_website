@@ -1,0 +1,66 @@
+.sec3 {
+    // background-image: radial-gradient(rgba(255, 255, 255, 0.3), rgb(1, 4, 39) ); //night
+    // background-image: linear-gradient(to top , rgba(255, 0, 0, 0.6), rgb(1, 4, 39) ); //evening
+    @include flex;
+}
+.man {
+    width: 200px;
+}
+.moon {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    z-index: +2;
+}
+.shadow {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    border-radius: 50%;
+    // transform: translate(30px , 30px);
+    transition: 3s;
+}
+
+.stars{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: +1;
+    background-image: url("../../image/stars.svg");
+    background-size: 1440px;
+    background-position: center;
+    animation: start 5s linear infinite;
+        
+}
+
+.stars1{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: +1;
+    background-image: url("../../image/stars.svg");
+    background-size: 1440px;
+    background-position: center;
+    transform: rotate(180deg);
+    animation: starone 5s linear infinite;
+}
+
+@keyframes starone {
+    0%{opacity:0;}
+    20%{opacity:1;}
+    80%{opacity:1;}
+    100%{opacity:0;}
+    
+}
+
+@keyframes start {
+    0%{opacity:1;}
+    20%{opacity:0;}
+    80%{opacity:0;}
+    100%{opacity:1;}
+    
+}
