@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "style.scss",
+        "_one.scss",
+        "_teo.scss",
+        "_tree.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    font-family: lalezar;
+}
+body {
+    background: rgb(180, 180, 180);
+}
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.answers {
+    width: 100%;
+    height: 120px;
+    @include flex;
+    margin-top: 10vh;
+}
+
+.garhn {
+    width: 240px;
+    height: 120px;
+    font-size: 3em;
+    text-align: center;
+    border-radius: 13px;
+    background: #dfdfdf;
+    border: none;
+    @media (max-width: 768px) {
+        width: 40%;
+        height: 120px;
+    }
+
+    &:focus {
+        border: none;
+    }
+}
+.Salls {
+    margin-left: 76px;
+    @media (max-width: 768px) {
+        margin-left: 13px;
+    }
+    @extend .garhn;
+}
+
+.boty {
+    width: 80px;
+    height: 30px;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 0 auto;
+    transition: 0.5s;
+    font-size: 1.15em;
+    &:hover {
+        letter-spacing: 1px;
+    }
+}
+.set {
+    width: 100%;
+    height: 100px;
+    @include flex;
+}
+
+.nameOdTheh {
+    color: rgb(180, 180, 180);
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    font-size: 3em;
+    @media (min-width: 768px) {
+        margin-bottom: 10vh;
+    }
+}
+
+.bayberi {
+    width: 100%;
+    margin-top: 20px;
+    
+    @include flex;
+    
+    float: left;
+    img {
+      width: 160px;
+      
+    }
+}
+
+.show {
+    width: 100%;
+    height: 55vh;
+    height: 0px;
+    overflow: hidden;
+    border-radius: 50px;
+    background-image: linear-gradient(to bottom, rgb(230, 230, 230), rgba(4, 1, 163, 0));
+    transition: 0.5s;
+}
