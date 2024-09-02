@@ -1,0 +1,23 @@
+/* Experience.css */
+.experience {
+    margin-bottom: 20px;
+  }
+  
+  .experience h3 {
+    color: #1a73e8;
+    margin-bottom: 10px;
+  }
+  
+  .experience p {
+    margin: 5px 0;
+  }
+  
+  .experience a {
+    color: #1a73e8;
+    text-decoration: none;
+  }
+  
+  .experience a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,36 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Pdf from "./components/Main";
+import source from "../public/source.json"
 
-function App() {
-  const [count, setCount] = useState(0)
+// @ts-ignore
+import html2pdf from 'html2pdf.js';
+
+const App = () => {
+  const generatePDF = () => {
+    const element = document.getElementById('resumeContent');
+    const NameFile = source.filename
+    const opt = {
+      margin: 0.5,
+      filename: `${NameFile}.pdf`,
+      // image: { type: 'png', quality: 0.98 },
+      html2canvas: { scale: 2 },
+      jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+    };
+
+    // New Promise-based usage:
+    html2pdf().set(opt).from(element).save();
+  };
+
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-          
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Pdf />
+      <hr />
+      <button
+        onClick={generatePDF}
+        style={{
+          width: "20%",
+          marginLeft: "40%",
+          marginBottom: "100px"
+        }}
+      >Download PDF</button>
     </>
   )
 }
 
-export default App
+export default App;
