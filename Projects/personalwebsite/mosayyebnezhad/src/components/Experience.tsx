@@ -1,6 +1,5 @@
 
 import './Styles/Exprience.css';
-import source from "../../public/source.json"
 
 const Experience = () => {
   return (
